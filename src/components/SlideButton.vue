@@ -1,5 +1,9 @@
 <script setup>
-const { handleClick } = defineProps(['handleClick']);
+const emit = defineEmits(['click']);
+
+function handleClick() {
+  emit('click');
+}
 </script>
 
 <template>
@@ -15,10 +19,8 @@ const { handleClick } = defineProps(['handleClick']);
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
-}
-
-.slide-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: white;
+  border: 1px solid #000;
 }
 </style>

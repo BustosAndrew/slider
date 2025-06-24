@@ -1,15 +1,18 @@
-<script setup></script>
+<script setup>
+import Carousel from './components/Carousel.vue';
+</script>
 
 <template>
-  <main></main>
+  <main>
+    <Carousel />
+  </main>
 </template>
 
 <style scoped>
 main {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 </style>
